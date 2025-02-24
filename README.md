@@ -1,97 +1,59 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# ⏱️ Cronômetro
 
-# Getting Started
+<div align="center">
+  <strong>⏳ Um app simples para medir o tempo com funcionalidades de iniciar, pausar e zerar!</strong>
+</div>
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## 🎯 Objetivo do Projeto
 
-## Step 1: Start Metro
+Este aplicativo foi criado para praticar conceitos fundamentais do React Native, incluindo:
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- 📌 **Text** (exibição de texto)
+- 📌 **View** (estruturação de layout)
+- 📌 **Image** (exibição de imagens)
+- 📌 **TouchableOpacity** (botões interativos)
+- 📌 **useState** (gerenciamento de estado no React Native)
+- 📌 **setInterval** (manipulação de tempo)
+- 📌 **StyleSheet** (estilização de componentes)
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## 🛠️ Pré-requisitos
 
-```sh
-# Using npm
-npm start
+Antes de começar, certifique-se de ter instalado em sua máquina:
 
-# OR using Yarn
-yarn start
-```
+- Node.js
+- React Native CLI
+- Android Studio
+- JDK8
 
-## Step 2: Build and run your app
+## 📌 Funcionalidades
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+- **Iniciar o cronômetro**: Começa a contagem do tempo.
+- **Pausar o cronômetro**: Pausa a contagem do tempo.
+- **Zerar o tempo**: Reinicia o cronômetro para zero.
+- **Exibir o último tempo registrado**: Mostra o último tempo marcado antes de zerar.
 
-### Android
+## 🎨 Tecnologias utilizadas
 
-```sh
-# Using npm
-npm run android
+- React Native
+- TypeScript
+- Android Studio
+- Node.js
 
-# OR using Yarn
-yarn android
-```
+---
 
-### iOS
+### Estrutura do Projeto
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+- **`App.tsx`**: Contém a lógica principal do cronômetro, incluindo a manipulação do tempo e a interface do usuário.
+- **`src/crono.png`**: Imagem do ícone do cronômetro.
+- **`styles`**: Estilização dos componentes usando `StyleSheet`.
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+### Código Explicado
 
-```sh
-bundle install
-```
+O cronômetro funciona com base em três estados principais:
 
-Then, and every time you update your native dependencies, run:
+1. **`numero`**: Armazena o tempo atual no formato `HH:MM:SS`.
+2. **`botao`**: Controla o texto do botão (Iniciar, Pausar, Continuar).
+3. **`ultimo`**: Armazena o último tempo registrado antes de zerar.
 
-```sh
-bundle exec pod install
-```
+A lógica do cronômetro é implementada usando `setInterval` para atualizar o tempo a cada segundo.
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
