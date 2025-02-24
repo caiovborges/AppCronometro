@@ -1,0 +1,26 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar builds e pastas de cache
+android/.gradle/
+android/app/build/
+android/build/
+ios/build/
+ios/Pods/
+ios/AppCronometro.xcworkspace/
+ios/AppCronometro.xcodeproj/project.xcworkspace/
+ios/AppCronometro.xcodeproj/xcuserdata/
+
+# Ignorar arquivos de ambiente
+.env
+.env.local
+
+# Ignorar logs e dependências
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.expo/
+.expo-shared/
+
+# Ignorar arquivos do sistema
+.DS_Store
