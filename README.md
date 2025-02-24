@@ -41,6 +41,37 @@ Antes de começar, certifique-se de ter instalado em sua máquina:
 
 ---
 
+# 🚀 Como executar o projeto
+
+Siga os passos abaixo para rodar o projeto em sua máquina:
+
+## 📥 Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/AppCronometro.git 
+````
+
+## 📂 Navegue até a pasta do projeto:
+```bash
+cd AppCronometro
+````
+
+## 📦 Instale as dependências:
+```bash
+npm install 
+````
+
+## ▶️ Execute o projeto:
+
+### Para Android:
+```bash
+npx react-native run-android
+```
+
+### Para iOS::
+```bash
+npx react-native run-ios
+```
+
 ### Estrutura do Projeto
 
 - **`App.tsx`**: Contém a lógica principal do cronômetro, incluindo a manipulação do tempo e a interface do usuário.
