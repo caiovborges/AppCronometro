@@ -71,6 +71,12 @@ npx react-native run-android
 ```bash
 npx react-native run-ios
 ```
+## 📸 Capturas de Tela
+<div align="center">
+  <img src="screenshots/screenshot1.png" alt="Tela inicial do cronômetro" width="200"/>
+  <img src="screenshots/screenshot2.png" alt="Cronômetro em execução" width="200"/>
+  <img src="screenshots/screenshot3.png" alt="Último tempo registrado" width="200"/>
+</div>
 
 ### Estrutura do Projeto
 
